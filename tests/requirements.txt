@@ -1,0 +1,6 @@
+pytest
+pytest-asyncio
+mcp[cli]
+httpx
+resvg-py
+pillow

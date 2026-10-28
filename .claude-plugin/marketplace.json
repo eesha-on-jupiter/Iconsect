@@ -1,0 +1,15 @@
+{
+  "name": "iconsect",
+  "description": "Iconsect: the Claude Code plugin that renders and embeds a consistent set of Grasshopper component icons from icons.json.",
+  "owner": {
+    "name": "Eesha Jain",
+    "email": "toeesha@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "iconsect",
+      "source": "./iconsect",
+      "description": "Layered icon generation for Grasshopper plugins. Pick a background style from a rendered preview, then render every icon (shape + optional watermark + Iconify glyph) from icons.json and embed them into Resources.resx."
+    }
+  ]
+}

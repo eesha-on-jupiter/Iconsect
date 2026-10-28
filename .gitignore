@@ -1,0 +1,24 @@
+# Machine-local Claude Code state, at every level. settings.local.json is pre-approved tool
+# permissions (machine-specific); neither is read when the plugin is installed.
+.claude/
+settings.local.json
+
+# --- Python ----------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# --- Editors / OS ----------------------------------------------------------------
+.vs/
+.idea/
+.vscode/
+*.DS_Store
+Thumbs.db
+
+# --- Local scratch ----------------------------------------------------------------
+.env
+*.local
+Icons/_preview/

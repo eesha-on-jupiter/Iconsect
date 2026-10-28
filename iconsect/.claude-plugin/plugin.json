@@ -1,0 +1,16 @@
+{
+  "name": "iconsect",
+  "displayName": "Iconsect",
+  "version": "0.1.0",
+  "description": "Layered icon generation for Grasshopper plugins. Pick a background style from a rendered preview, then render every icon (shape + optional watermark + Iconify glyph) from icons.json and embed them into Resources.resx. Four commands: /icon-init, /icon-preview, /icon-gen, /icon-embed.",
+  "author": {
+    "name": "Eesha Jain",
+    "email": "toeesha@gmail.com"
+  },
+  "mcpServers": {
+    "sect-icon-generator": {
+      "command": "python",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/mcps/sect-icon-generator/server.py"]
+    }
+  }
+}
