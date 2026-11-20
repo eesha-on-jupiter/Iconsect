@@ -1,6 +1,6 @@
 {
   "_README": [
-    "TEMPLATE — this file is never rendered. pr-icons copies it to the plugin root as icons.json,",
+    "TEMPLATE — this file is never rendered. sect-icons copies it to the plugin root as icons.json,",
     "fills in the placeholders, and passes THAT path as config_path on every MCP call.",
     "Keys beginning with _ are documentation and must be deleted from the real icons.json.",
     "",
@@ -83,7 +83,7 @@
   },
 
   "plugin_icon": {
-    "_note": "The 16x16 ribbon icon. Renders to [XX]_[PluginName]Logo, wired by pr-assembly.",
+    "_note": "The 16x16 ribbon icon. Renders to [XX]_[PluginName]Logo, wire it yourself with AddCategoryIcon.",
     "size": 16,
     "fg_iconify_id": "[prefix:name]",
     "fg_color": "#FFFFFF",

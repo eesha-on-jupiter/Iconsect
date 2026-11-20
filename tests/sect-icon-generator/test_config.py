@@ -2,7 +2,7 @@
 Tests for load_config() in sect-icon-generator/server.py.
 Covers: required path, always-fresh reads, missing file error, and the shipped template.
 
-There is no default config: icons.template.json is a template pr-icons copies, never a config
+There is no default config: icons.template.json is a template sect-icons copies, never a config
 the server renders from. Omitting config_path is an error, not a fallback.
 """
 import json
@@ -87,7 +87,7 @@ def test_load_config_different_paths_load_independently(tmp_path):
 # ── the shipped template ─────────────────────────────────────────────────────
 
 def test_template_exists_and_is_valid_json():
-    # pr-icons copies this file, so a syntax error here breaks every new plugin's icons.
+    # sect-icons copies this file, so a syntax error here breaks every new plugin's icons.
     assert TEMPLATE.exists(), f"missing template: {TEMPLATE}"
     json.loads(TEMPLATE.read_text(encoding="utf-8"))
 

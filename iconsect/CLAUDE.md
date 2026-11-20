@@ -69,10 +69,12 @@ The icon engine is shared with [PleaseREST](https://github.com/eesha-on-jupiter/
 equivalents are `pr-icon-generator` and the `pr-icons` skill. The two are kept at feature parity.
 
 `server.py`, `icons.template.json` and `backgrounds/` are functionally identical in both repos and
-differ only in the server's own name (its docstring header and the `FastMCP(...)` argument).
+differ only in naming: the server's own name (its docstring header and the `FastMCP(...)` argument)
+and the skill names mentioned in comments and template notes (`sect-icons` here, `pr-icons` and
+`pr-assembly` there).
 
 **Changing icon rendering?** Apply it in both repos, diff the two `server.py` files to confirm only
-the name lines differ, and run both test suites. Entry points are not shared: Iconsect has its own
+those naming lines differ, and run both test suites. Entry points are not shared: Iconsect has its own
 four commands, PleaseREST drives icons through its pipeline.
 
 ---

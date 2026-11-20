@@ -19,10 +19,10 @@ shapes. Drop an SVG in and it is available immediately under its filename slug.
 
 Style is resolved per component: defaults < subcategory < component override.
 Everything is specified in the plugin's icons.json (authored post-spec by the
-pr-icons skill).
+sect-icons skill).
 
 config_path is REQUIRED and names that icons.json. icons.template.json next to
-this file is the starting point pr-icons copies; it is never rendered directly.
+this file is the starting point sect-icons copies; it is never rendered directly.
 """
 
 import io
@@ -41,7 +41,7 @@ from mcp.server.fastmcp import FastMCP
 mcp = FastMCP("sect-icon-generator")
 
 # ── Config ───────────────────────────────────────────────────────────────────
-# icons.template.json next to this file is a TEMPLATE, not a usable config — pr-icons copies it
+# icons.template.json next to this file is a TEMPLATE, not a usable config — sect-icons copies it
 # as the starting point for a plugin's icons.json. There is deliberately no default config: every
 # call names the plugin's own icons.json, so a missing config_path fails loudly instead of
 # silently rendering someone else's plugin's icons.
@@ -944,7 +944,7 @@ async def generate_plugin_icon(config_path: str | None = None) -> str:
     Generate the 16x16 plugin / category icon shown in the Grasshopper ribbon strip.
 
     Reads the `plugin_icon` block from icons.json (its own fg/background/size, default
-    16px). Saved as <prefix>_<PluginName>Logo.png so pr-assembly can wire it via
+    16px). Saved as <prefix>_<PluginName>Logo.png so you can wire it via
     GH_AssemblyPriority.AddCategoryIcon (resource <prefix>_<PluginName>Logo).
     """
     try:
