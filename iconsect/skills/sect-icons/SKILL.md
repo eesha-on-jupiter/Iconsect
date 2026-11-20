@@ -1,6 +1,6 @@
 ---
 name: sect-icons
-description: Author an icons.json for a Grasshopper plugin, let the user pick every icon and background, then render and embed via the sect-icon-generator MCP
+description: Make icons for a Grasshopper plugin. Shows the background options and gets an explicit pick, authors icons.json, then renders every icon and embeds it into Resources.resx via the sect-icon-generator MCP. Load when creating, restyling, re-rendering or embedding Grasshopper component icons.
 ---
 
 # Skill: Icon authoring
